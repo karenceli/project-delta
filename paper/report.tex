@@ -1,8 +1,11 @@
 \documentclass[11pt]{article}
 
 \usepackage[margin=0.75in]{geometry}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\bibliographystyle{siam}
 
-\title{The title of your project proposal}
+\title{The Neural Basis of Loss Aversion in Decision-Making Under Risk}
 \author{
   Kong, Victor\\
   \texttt{VictorKong94}
@@ -20,31 +23,80 @@
   \texttt{yfxia}
 }
 
-\bibliographystyle{siam}
+
 
 \begin{document}
 \maketitle
 
-\abstract{You should have a short abstract.}
+\abstract{\input{text_files/abstract.tex}}
 
 \section{Introduction}
-
-Identify a published fMRI paper and the accompanying data
-\cite{lindquist2008statistical}.  You should explain the basic idea of the
-paper in a paragraph.  You should also perform basic sanity check on the data
-(e.g., can you downloaded, can you load the files, confirm that you have the
-correct number of subjects).
-
-Briefly explain what reproducibility means and in what sense you will
-try to reproduce this study.
+	\input{text_files/intro.tex}
 
 \section{Data}
 
+	\input{text_files/data.tex}
+	
 \section{Methods}
+
+	\subsection{Hypothesis Tests}
+	
+		\input{text_files/hypo.tex}
+			
+	\subsection{Linear Regression}
+	
+		\input{text_files/linear.tex}
+		
+	\subsection{Logistic Regression}
+	
+		\input{text_files/logistic.tex}
+		
+	\subsection{Correlation Analysis}
+	
+		\input{text_files/correlation.tex}
+		
+	\subsection{Robust Regression Analysis}
+	
+		\input{text_files/robust.tex}
+
+	\subsection{Principal Components Analysis}
+	
+		\input{text_files/pca.tex}
+		
+	\subsection{Support Vector Machines}
+	
+		\input{text_files/svm.tex}
+		
+	\subsection{Decision Trees}
+	
+		\input{text_files/trees.tex}
+
+		
 \section{Results}
+		
+	\subsection{Linear Regression Results}
+	
+		\input{text_files/reg_results.tex}
+		
+		
+	\subsection{Hypothesis Testing Results}
+	
+		\input{text_files/hypothesis_results.tex}
+		
+	\subsection{cont'd}
+	
+		\input{text_files/cont'd.tex}
+		
 \section{Discussion}
-
-
+	
+	\subsection{Discussion of Results}
+		
+		\input{text_files/discussion.tex}
+		
+	\subsection{Discussion of Future Work}
+	
+		\input{text_files/discussion_future.tex}
+		
 \bibliography{project}
 
 \end{document}
