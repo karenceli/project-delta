@@ -1,0 +1,68 @@
+ss[11pt]{article}
+
+\usepackage[margin=0.75in]{geometry}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\bibliographystyle{siam}
+
+\title{The Neural Basis of Loss Aversion in Decision-Making Under Risk}
+\author{
+  Kong, Victor\\
+  \texttt{VictorKong94}
+  \and
+  Li, Ce\\
+  \texttt{karenceli}
+  \and
+  Liu, Anna\\
+  \texttt{liuanna}
+  \and
+  Xia, Yunfei\\
+  \texttt{yfxia}
+  \and
+  Qin, Weidong\\
+  \texttt{j170382276}
+}
+
+\begin{document}
+\maketitle
+
+\abstract{\input{text_files/0_abstract.tex}}
+
+\section{Introduction}
+        \input{text_files/1_introduction.tex}
+
+\section{Data}
+        \input{text_files/2_data.tex}
+
+\section{Methods}
+
+    \subsection{Smoothing}
+            \input{text_files/3_smoothing.tex}
+    \subsection{Convolution}
+            \input{text_files/3_convolution.tex}
+    \subsection{Linear Regression}
+            \input{text_files/3_linear_regression.tex}
+    \subsection{Logistic Regression}
+                \input{text_files/3_logistic_regression.tex}
+    \subsection{Hypothesis Testing}
+                \input{text_files/3_hypothesis_testing.tex}
+
+\section{Results}
+
+    \subsection{Neural Results}
+            \input{text_files/4_neural_results.tex}
+    \subsection{Behavioral Results}
+                \input{text_files/4_behavior_results.tex}
+    \subsection{Smoothing Results}
+                \input{text_files/4_smoothing_results.tex}
+
+\section{Discussion}
+
+    \subsection{Discussion of Results}
+            \input{text_files/5_discussion_of_results.tex}
+    \subsection{Discussion of Future Work}
+            \input{text_files/5_discussion_of_future_work.tex}
+
+\bibliography{report}
+
+\end{document}
